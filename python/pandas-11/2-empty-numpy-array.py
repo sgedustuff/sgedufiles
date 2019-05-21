@@ -15,7 +15,7 @@ print (arr2.dtype)
 print (arr1)
 print (arr2)
 
-print (arr1[1][1])
+print ( arr1[1][1]   )
 
 print (arr1.shape)
 print (arr2.shape)
