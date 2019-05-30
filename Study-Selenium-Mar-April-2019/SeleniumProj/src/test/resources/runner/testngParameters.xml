@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Learning" parallel="tests">
+
+
+
+
+	<test name="Login Test">
+
+
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url" value="http://gmail.com"></parameter>
+		<classes>
+			<class name="testnglearning.TestngParameters" />
+
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="second Test">
+
+
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="http://gmail.com"></parameter>
+		<classes>
+			<class name="testnglearning.TestngParameters" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+
+</suite> <!-- Suite -->

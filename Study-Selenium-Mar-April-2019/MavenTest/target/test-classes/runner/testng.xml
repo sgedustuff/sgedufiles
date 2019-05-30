@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Learning">
+
+
+
+	<listeners>
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+	</listeners>
+
+
+
+	<test name="Login Test">
+
+
+
+		<classes>
+			<class name="testnglearning.Case1" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Validate Title Test">
+		<classes>
+
+			<class name="testnglearning.Case2" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="Dependency Test">
+		<classes>
+			<class name="testnglearning.Case3" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

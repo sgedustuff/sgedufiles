@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 1.446 sec <<< FAILURE! - in TestSuite
+validateTitles(testnglearning.Case2)  Time elapsed: 0.045 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [Yahoo.com] but found [Gmail.com],
+	Element not found expected [true] but found [false],
+	Test failed as the condition is not met
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at testnglearning.Case2.validateTitles(Case2.java:48)
+
+doUserReg(testnglearning.Case3)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: User not registered successfully
+	at org.testng.Assert.fail(Assert.java:96)
+	at testnglearning.Case3.doUserReg(Case3.java:15)
+

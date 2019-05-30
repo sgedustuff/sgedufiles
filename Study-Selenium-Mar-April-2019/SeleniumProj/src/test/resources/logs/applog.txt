@@ -1,0 +1,14 @@
+INFO    2019-04-06 11:45:32,711 [main] testcases.TestProperties  - OR properties loaded
+INFO    2019-04-06 11:45:32,713 [main] testcases.TestProperties  - Config properties loaded
+INFO    2019-04-06 11:45:42,694 [main] testcases.TestProperties  - Firefox launched
+INFO    2019-04-06 11:45:47,750 [main] testcases.TestProperties  - Navigated to : http://gmail.com
+INFO    2019-04-06 11:45:48,540 [main] testcases.TestProperties  - Typing in an Element :  username_CSS and entered the value as : trainer@way2automation.com
+ERROR   2019-04-06 11:45:58,579 [main] testcases.TestProperties  - Error while clicking on an Element : nxtBtn_XPATH error is : Unable to locate element: /html/body/div[100]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/content/span
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3SL4LUB', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19800, moz:profile: C:\Users\WAY2AUTOMATION\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1cea5f5-5498-44c1-a969-e39d1d90e6d9
+*** Element info: {Using=xpath, value=/html/body/div[100]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/content/span}
+INFO    2019-04-06 11:46:07,730 [main] testcases.TestProperties  - Test Execution Completed !!!
