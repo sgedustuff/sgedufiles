@@ -1,0 +1,47 @@
+1)Ctrl + shift + O = import statement automatically (include/exclude)
+
+2)ctrl + shift + / = multiple line comment
+3)ctrl + shift + \ = multiple line un-comment
+
+4)ctrl + / = comment single line
+5)ctrl + \ = uncomment single line
+
+5)type syso and then ctrl+space and enter = print systsem.out.println statements
+
+6)ctrl + shift + f = to align the code automatically
+7)ctrl+f11 = execute project
+
+//make block like if, trycatch, loop etc..
+alt+shift+z = select statement and press the shortcut key, u will see the list templates.
+	 = without select statement, allow u to create templates
+
+//open-close
+1) ctrl+shift+f4 = close all files
+2) ctrl+f4 = close selected file.
+3) ctrl + e = move in currently opened files.
+4) ctrl + pgup = move in between previous file and current file
+5) ctrl + pgdown = move in between previous file and current file
+6) ctrl + f7 = move in between views
+7) alt+shift+w = show system explorer = open file in windows explorer
+
+//search
+-----------
+8)ctrl+h = search "something" in files.
+9)ctrl+shift+R = search particular file.
+10) ctrl+shift+H = find classes or type  like "time" classes
+11) ctrl + o = see method list of class, press again, see inherited methods.
+12) ctrl + L = line number
+
+//know about code
+-------------------------
+11)ctrl+t = bring pointer or cursor on calling method and see the defination.
+
+//execution/debugging/breakpoint
+-----------------------------------------------
+1) ctrl+f11 = run the program.
+2) alt+shift+x,  then g = run testng.xml file
+2) F11	Debug
+3) F5	Step Into function
+4) F6	Next step (line by line)
+5) F7	Step out
+6) F8	Skip to next Breakpoint

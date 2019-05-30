@@ -1,0 +1,535 @@
+---------------------------log4j----------------------------------------------------------
+
+log4j = What points need to remember
+------------------------------------
+- appender = where u want to keep our logs
+	1) on console = console appender
+	2) in file = file appender
+	3) on email = smtp appender
+	4) in html format = html appender
+
+- pattern = how your logs looks alike, means to what u want to append with log like date&time stamp, class name etc. so that we can easily capture at what time and by what class so and so log was generated.
+
+- debug level = log level
+	1) INFO
+	2) WARN
+	3) ERROR
+
+- properties file = infor of all above is mentioned in properties file
+
+- Logger = use this class for logging. call getLogger() static method of logger class to get the object of logger class.
+
+- log4j.jar file
+
+
+properties file
+--------------------
+- rootlogger = info (info is the top level log level, if this is set, we can have log for info, error and so on.)
+- appender = which type of appender, u are going to use like file appender, console appender and so on.
+- apppender file = specify the name of the file, in which u want to have ur logs
+- appender layout =
+- appender layout conversion pattern
+- append = false or true (want to append new logs in existing file = then set to true, only new logs shoule be written, means to say old logs must be overwritten with new logs = then set to false)
+- maxfilesize = max size of the file
+- maxbackupindex = if size is exceeded, want to create the backup files, then specify the number. if number is 3, then it will create 3 max files
+
+
+
+
+
+practical (1)
+-------------
+- grab the property file from internet or from existing project
+- put it into the test=>resources.
+- in main method, load the log4j properties file = PropertyConfigurator.configure("<log4j property file path")
+- create an object of logger class. in method, pass the name of your class like <name of the class>.class = it will ***initiate the log**** but not to generate the log
+- where u want to have log use = <logger object name>.<log level>(<message>)
+- run the practical
+
+------------------------------------------log4j----------------------------------------------------------
+
+
+
+
+-----------------------------javamail api----------------------------------------------------------
+
+- download the required for sending email from tutorialpoint.com site and developed own utility
+- inside test=>resources, create the utility package and put your class like "montioring email". take this class from existing project
+- in gmail account, turn on option "security=>less secure app access"
+(https://myaccount.google.com/lesssecureapps)
+--------------------------javamail api----------------------------------------------------------
+
+
+
+--------------------mysql-connector-java api-----------------------------------
+
+- mysql will have different jar file, sql server will have different jar file, oracle will have different jar file.
+- for microsoft sql server till 2012 is = JTDS (mvn repository)
+- mysql = mysql-connector-java (mvn repository) = 8.0.15
+- download mysql = mysql community server => locate zip, archieve file 8.0.15
+- once u will installed
+	- server will be localhost:3306
+	- user name = root
+	- password = that u will provide during installation
+- tutorial point = how to create database connection in java
+- create utility that will interact with database like DBManager and download from existing project (test-resources->utilities(package name>)
+
+
+------------------------mysql-connector-java api----------------------------------------------------------
+
+
+
+----------------------------------------testng api----------------------------------------------------------
+
+- end goal, that how many test cases are executed, how many are passed and how many are failed.
+
+- JUNIT & TEST NG
+	- both are java frameworks | API | JAR Files.
+	- JUNIT is used by developers for unit testing 
+	- JUNIT features are limited as compared to TESTNG, because in testing we need more features 
+		- advance reporting
+		- additional annotations (it defines, the flow of control in the class)
+		This is the reason, that in automation testing industry, only TESTNG is used.
+
+- TESTNG 
+	- convert our code into test cases or test suite
+	- very helpful to design the test suite
+
+- how to use testng
+	- there are two ways to refer testng
+		- refer non-beta version info from mvn repo (6.14.3) and add the same in pom.xml file
+		- refer testng.org site and under heading eclipse plugin, u will see link http://beust.com/eclipse/, copy the link
+			- eclipse
+			- help
+			- install new software
+			- paste the link = work with and hit enter and do next-next for performing installation
+			- once installed, do restart the eclipse
+
+			- open eclipse and right click on ur project, u will see option "testng"
+			- to refer testng in your project, perform below steps
+				- right click on project
+				- build path => configure build path => Add library => select testng 
+
+----------------
+- practical(1)
+---------------
+	- under test/java => create package "testng learning"
+	- create a new class without psvm (TestCase1)
+	- create method like dologin and decorate with annoations like @test. by doing this a method is said to be testcase.
+	- now on rightclick on project => runas => u will see the option "testng test". after run, u will see report as well.
+
+
+- scenario (1) = we have two test cases like a and b, we want to execute "b" test case after "a" test case
+
+
+	- by default test cases run alphabetically, so can't acheive, what we want to expect.
+
+	- use @Test(priority=1) for registration and use @Test(priority=2) for login user
+
+
+
+- scenario (2) = call particular method first everytime, before executing test case like launchbrowser method
+--------------
+	
+	- make method that launch browser and annotate with "@BeforeMethod".
+	- this will be called before any test case.
+
+
+- scenario (3) = call particular method at last everytime, after executing test case like quitbrowser method
+---------------
+
+	- use @AfterMethod
+
+ 
+	
+- scenario (4) = call particular method at first and only once, before start executing of test cases like create db connection
+---------------
+
+	- @BeforeTest
+
+
+- scenario (5) = call particular method at last and only once, after executing of all test cases like close db connection
+---------------		
+
+	- @AfterTest
+
+
+------------
+practical(2)
+------------
+
+
+- scenario (7) = forcefully fail the test
+---------------		
+	
+	Assert.fail(<any error message>)
+
+- scenario (8) = compare actual and expected values in test case (how to report failure or pass)
+---------------		
+	
+	Assert.assertEquals(<actual>, <expected>); //if not are same, AssertionError will be thrown
+
+
+- scenario (9) = are we getting true value (which is expected) (how to report failure or pass)
+---------------		
+	
+	Assert.assetTrue(<boolean variable name>, <any error message>); //if false, AssertionError will be thrown
+
+
+- scenario (10) = let's say in single test case, we have 3 assertions, if one assertion is failed, then further assertions are not performed, so how to get peform all assertions and get the final result at the end.
+---------------------		
+
+	- when use = where priority is high but severity is low, means proceed further to evaluate the assertions
+	
+	- create an object of SoftAssert
+
+	- use SoftAssert class object rather than Assert
+
+	- at the end of all Asserts, call assertAll() method of SoftAssert class.
+
+	- u will see test case is failed and all expections are coming up in test report as well, if above step is missing, then test case wil be passed and no failure messages in the report as well.
+
+
+	
+------------
+practical(3)
+------------		
+
+
+- scenario (9) = if registration test case is failed, then login test case should not be executed at all, menas it must be skipped
+---------------		
+
+	 - annotate the login test case
+
+	 - @Test(priority=2, dependsOnMethods="reg test case method name")
+
+	 - if multiple test cases are depends then use like 
+
+			 - @Test(priority=2, dependsOnMethods={"<1st test case>", "<2nd test case>"})	
+
+
+Note: in the report, u only can see test cases method		
+----
+
+
+---------------
+Scenario 10: skip the test forcefully, or lets say on home page of site, there is no purchase 
+---------------   item, so no need to run the test case
+		
+	- throw new SkipException("<reason to skip test case>");
+
+Test suite = collection of test cases. different test cases for different purpose can come in different test classes. In real scenario, we have different test classes, that contain different test cases.
+
+---------------
+Scenario 11: execute all test classes together.
+---------------
+	- refer documentation on testng.org.
+		- u will see lot of things under documentation like
+			- annotations
+			- dependencies
+			- testng.xml.
+
+	- testng.xml = test suite are designed through this xml file.
+
+	- let's say, we have mutiple classes, some are test classes that have @Test annotations and some are not, so how to validate which classes have @Test attribute and which  classes have not such attribute. so first approach will be, open the class one by one and validate it or take the help of plug in
+
+		- how to take the help of plugin
+
+		        - right click on project => testng => convert to testng
+		        - it will generate testng xml and added at root => click on finish.
+
+	- testng.xml = as of now "thread count" is not required.
+
+	- change suite name and test name and have three test tags and each test tag has only one class tag, just for example 
+
+	- right click on testng.xml => run as => testng suite => execute test cases in the same sequence as we specify in testng.xml
+
+	- refresh ur project, and u will see "test-output" folder is generated and under that folder, u will see "index.html" file or "emailable-report.html (it is said to be test report)
+
+
+---------------
+Scenario 12: how to customize the test report for adding screen shot in case of test case 
+---------------  failure
+
+	- put the entire test case code in try catch block.
+	- specify = Reporter.log("<any message or link>");
+
+
+---------------
+Scenario 13: how to customize the test report for adding screen shot in case of test case 
+---------------  failure (assume, there may be failure of multiple test cases) so rather than putting the each test case code in try catch block, how to achive this thing.
+
+	- remember, how trigger works
+	- create the class and implements ITestListener and overide all methods of it
+	- under method "onTest Failure" specify = Reporter.log("<any message or html tag>");
+		- for thumbnail in html
+			<a target="_blank" href="<screen shot path>">
+			<img src="screen shot path" height=200 width=200/> 
+			</a>
+	- in testng.xml = add listeners tag under suite tag = specify the class name along with package
+	- run test suite, u will see screen shot links, whereever test cases are failed (in report have to click on test case, which is failed)
+ 
+---------------
+Scenario 14:   want to add more listener, means to say to have more interactive report, not satisfied with report provided by testng	
+---------------
+	
+	- serach reportng = mvn repo = html reporting plugin for testng unit testing framework.
+
+	- dependent jar file = guice = refer from mvn repo as well
+
+	- in reporting jar, u will see class name i.e. HTMLReporter = add it inside the listeners tag
+
+	- run ur code and refresh the project = u will see "html" folder under test-output folder => see index.html [ browse the report]
+
+	- u might see, that ur customized html is not rendered in correct way = screenshot link
+
+		- whereever u writing Reporter.log, go to that place, the first line of ur should be like below
+
+		System.setProperty("org.uncommons.reporting.escape-output","false");
+
+---------------
+Scenario 14:   make parameterized test case and how parameter takes data and whole test case must be excuted for each set of data.
+---------------
+
+	- set up test case, that accepts username and password.
+	
+	- set method like getdata = return type  = Object[][] (method can return any type of data) = this method is known as data provider
+
+	- annotate the above method = @DataProvider	
+
+	- for more info, refer testng.org => documentation => refer section "parameterized data provider"
+
+		- u will see two ways to create parametrization test case
+			- use below
+			- 2nd refer Scenario 15
+
+	- write below code in method, that is known as data provider
+
+
+		Object[][] data = new Object[10][2];
+		data[0][0] = <username>;
+		data[0][1] = <passord>;
+
+		------keep writing for 10 users------
+
+		return data;		
+
+	- tell the test case, to read the data from data provider
+
+		@Test(dataProvider="<data provider method name>")
+
+		print parameters for testing purpose, are we getting data from data provider	
+
+
+-----------
+Scenario 15 = create test case parametrization by using testng.xml file
+-----------
+
+	- refer testng.org documentation for brief info
+
+	- make "runner" foler under test=>resources
+
+	- move testng.xml into it and and also create copy of it as testngparametrize.xml. so two files in them
+
+	- create new test class as testngparameters (have test case "testbrowser" takes string value as name of browser) and specify the name in new one .xml file and remove the existing one
+
+	- remove the listeners which are already present in new .xml file.
+
+	- in new one xml file, under test tag, create parameter tag with name="browser" and value="firefox"
+
+	- use annotate @Parameters("browser") = here browser is the name of the parameter 
+
+	- use annotate @Parameters({"browser","url"}) = if two parameters = here browser is the name of the parameter 
+
+
+	
+
+---------------------------------testng api----------------------------------------------------------
+
+
+-------------Reading excel----------------------------------------------------------
+
+- POI API = READING EXCEL FILES = refer video
+
+- Reading Exel File = refer Video
+
+Scenario = read excel file, a sheet has username and passwords of 10 users, just for example. run whole test case for one user at a time (facebook)
+--------
+
+	- continue to scenario 14 (testng)
+
+	- google search = type = apache poi api download = click on link = java api for microsoft documents
+
+	- on left side, u will find "excel" = underneath there is documentation = go through it. = locate "reading and writing" section
+
+	- create utility like "excel reader" for each operation, that u want to perform on excel sheet or take utility from existing project 
+
+	- put utility under utitlities package
+
+	- need 5 jars and put its information in pom.xml
+
+	- add guava jar = maven repo
+
+	- create package under test->resources like excel and paste the excel file.
+
+	- go in data provider method and create the object of the excel reader utilty = in cons = specify the excel file path
+
+		- String sheetName = "login";
+		- int rowCount = excel.getRowCount(sheetname);
+		- int colCount = excel.getColumnCount(sheetname);
+		- data[0][0] = excel.getCellData(sheetname, <colnumber>, <rowmumber>)
+
+			- 1st rownumber is header and from 2nd rownumber onwards data is present, so specify row number is 2
+			- colnumber either 0 or 1, as we have two columns
+
+
+	- integrate web driver functionality
+
+		- testcase = setup = web driver = beforetest = create object, maximize win, setting up timeout
+		- testcase = perform login (parameterized user name and password) = hit site and enter details
+		- testcase = teardown = webdriver = aftertest = quit from browser
+		
+
+
+	
+
+--------------Reading excel-------------------------
+
+
+---------------------------selenium grid----------------------------
+
+- mean to say about parallel testing or parallel test execution. this means same test case execution in firefox, same test case execution in chrome and so on = this is not the job grid, this is the job of testng.
+
+- grid is basically distribution the test case execution among remote machines
+
+- if 10 machines are connected with main machine. the main machine is known as hub and 10 machines are known as hub.
+
+- when the test will run on one machine, the same test will be distrivuted among remote machines. will it run parallel or simultaneoiously, that job is not of grid, that job is of testng.
+
+
+scenario-1 = how testng will run test case parallel
+--------
+
+	- as discuused in scenario 15 of testng, if u will make one more copy of test tag and change the brower value, after then if u will run, so first whole test case is run for firefox and then same whole test case is run for chrome = this is not parallel, this is sequential
+
+	- how to prove sequential, add below line of under test case at the end and run it
+	 	
+		Date d = new Date()
+		sopl(d)
+		Thread.sleep(2000)
+
+
+	- for parallel = add property to suite tag = (parallel=tests) = run it = now u will see, both have been executed at the same time.
+
+	 
+scenario-2 = what is the job of grid
+--------
+
+- when we want grid, to send test case with firefox info to remote-1 machine and with chrom info to remote-2 machine
+
+- when we want to test the application, for testing the browser compatability
+
+scenario-3 = how ur parameterized test case get the value from data provider method parallel (1st way to setup 
+--------     parameterized test case)
+	
+	- @DataProvider(parallel=true)
+	
+	- note = ur setup and tear down method must be setup with @beforemethod and @aftermethod as the test case executuion is parallel
+
+
+	- when u run, u will see three browser are opened as data provider method is throwing 3 information. it might throw thread exception, leave for now, will handle later this
+
+
+scenario-4 = when we run test cases, using testng.xml, it actually run all test cases written in testclasses, but --------   on productioon, we want to run limited test cases or high priority test cases or build/deployment verification test cases like smoke test or sanity test or execution of high level test cases
+
+	- put the required testcases in some group (how to group the testcases) = use "groups="high" = property of @Test (--or--) use "group={"high", "medium"}"
+
+	- let's say, we want to execute high priority test cases.
+
+		- bring up testng.xml file
+
+		- define groups tag = inside add below tag (groups tag must be first tag in after suite tag in xml)
+
+			<run>
+				<include name="high"></include>
+			</run>
+
+			(--or--)
+			
+			<run>
+				<exclude name="high"></exclude>
+			</run>
+	
+		- u can use group tag at <test> level as well for referring particuar testcases belongs to specific testclass
+
+		- now run, u will see, it will only run high priority test cases 
+		
+---------------------------selenium grid----------------------------
+
+
+
+--------------------------maven--------------------------------------
+
+1) maven is build tool as well as dependency management tool
+2) it looks pom.xml file
+3) when we run test cases through testng.xml, our output is kept inside the test-output folder (html->index.html, emailable-report.html)
+4) when we run test cases through maven, our output will be going to be kept in target folder rather than target-output folder.
+5) maven commands (can run on cmd prompt or project (right click)->runas->maven test)
+	1) mvn clean = remove everything in target dir.
+	2) mvn test = will execute all test cases.
+
+scenario-1 = how maven is actually executing test cases
+---------------
+	- when u run mvn test, u will see picking up testcases for execution in maven is different as compared to picking up testcases for execution through testng.xml
+
+		- see emailable-report under target->surefire-report folder (exec testcases through maven command i.e. mvn test) and see emailable-report under target-output folder (exec testcases through testng.xml).
+
+		- in maven report, u will see link "command line test" but in testng report, u will see link of each and every test case	
+
+	- so maven does not refer testng.xml, it actually refer those files which are pre-fixed by "Test" word. 
+
+		- if try to run command mvn test, it will not find any test cases and make your build success.
+
+scenario - 2 we want maven should refer testng.xml file - how?
+----------------
+	
+- there is something, that i have to use. this is maven-surefire-plugin
+
+- specify plugin in pom.xml along with path of testng.xml file. so now "mvn test" will be going to read testng.xml file
+
+- u will see same way the picking up of testcases for execution by testng and by using command "mvn test" and emailable-report of both variants are also same.
+
+scenario -3 = can we execute maven command by just double click on file
+----------------
+
+	- create notepad file
+	- write "mvn clean test"
+	- save it as .bat extension
+	- copy it into the project root folder
+	- execute it by just double click on it.
+
+
+--------------------------maven--------------------------------------
+
+
+
+
+---------------------------------------------architect related questions---------------------------
+
+1) Have a utilty that take care click, type, gettext and so on along with taking care of all locator like id, xpath, css, tagname etc.
+2) log4j api
+3) javamail api = develop utility and use it where ever it is required
+4) for picking up values, either use properties file or make a class with static datamembers
+5) make two type of properties file, one is related to objects and other is related to configuration
+6) have a utility that take care of taking screen shot and use the utility where ever it is required.
+7) have utility for interacting with database (wheather mysql or SQL server)
+
+---------------------------------------------architect related questions---------------------------
+
+
+
+
+
+
+
+
