@@ -1,0 +1,18 @@
+package utilities;
+
+public class TestConfig{
+
+
+	
+	public static String server="smtp.gmail.com";
+	public static String from = "raajnarora@gmail.com";
+	public static String password = "Amrat@006";
+	public static String[] to ={"raajnarora@gmail.com","rajanitclasses@gmail.com"};
+	public static String subject = "Test Report";
+	
+	public static String messageBody ="TestMessage";
+	public static String attachmentPath="D:\\Rajan\\Selenium-Practice\\17-mail\\src\\test\\resources\\screenshots\\pass\\pass-login-test.jpg";
+	public static String attachmentName="pass-login-test.jpg";
+
+		
+}

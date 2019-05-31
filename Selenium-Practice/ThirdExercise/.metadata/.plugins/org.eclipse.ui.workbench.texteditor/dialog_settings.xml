@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="WebDriverWait wait = new WebDriverWait(driver,10L);" key="selection"/>
+		<list key="findhistory">
+			<item value="WebDriverWait wait = new WebDriverWait(driver,10L);"/>
+			<item value="for(int i=0; i&lt;options.size(); i++){"/>
+			<item value="List&lt;WebElement&gt; names = driver.findElements(By.xpath(&quot;.//*[@id=&apos;load_form&apos;]/fieldset[1]/input&quot;));"/>
+		</list>
+	</section>
+</section>

@@ -66,6 +66,9 @@ print(objser_scval_2)
 
 
 
+
+#-------------------------------------------------------------------Functionality-----------------------------------------------------------
+
 #-------how to specify missing data-----------
 
 objser_mdata = pd.Series([10,np.NaN,20,30,np.NaN,40]) #NaN = can write as nan or NAN = Not a number
@@ -74,9 +77,10 @@ print(objser_mdata)
 
 
 #-------we hava data array and we have index array = club both of them to make series object-----------
-
 mydata=["win 10 games","win 20 games", "win 30 games"]
+
 myarridx=["delhi","madras","goa"]
+
 #objser_data_array = pd.Series(data=mydata, index=myarridx) 
 objser_data_array = pd.Series(mydata, myarridx) #can skip data and index keyword
 print("---------------------")

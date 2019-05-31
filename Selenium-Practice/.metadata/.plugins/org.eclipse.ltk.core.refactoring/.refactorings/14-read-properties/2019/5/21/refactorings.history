@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;properties&apos; to &apos;15-login-gmail-properties-optimized/src/test/resources&apos;&#x0D;&#x0A;- Original project: &apos;14-read-properties&apos;&#x0D;&#x0A;- Destination element: &apos;15-login-gmail-properties-optimized/src/test/resources&apos;&#x0D;&#x0A;- Original element: &apos;properties&apos;" description="Copy folder" destination="=15-login-gmail-properties-optimized/src\/test\/resources" element1="src/test/resources/properties" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1558436882645" units="0" version="1.0"/>
+</session>

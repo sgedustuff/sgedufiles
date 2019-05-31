@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+
+  <test name="TestFirstModule">
+    <classes>
+      <class name="DemoTestCases.DemoTestCase1"/>
+      <class name="DemoTestCases.DemoTestCase2"/>
+      <class name="DemoTestCases.DemoTestCase3"/>
+    </classes>
+  </test> <!-- TestFirstModule -->
+  
+  <test name="TestSecondModule">
+    <classes>
+      <class name="DemoTestCases.DemoTestCase4"/>
+      <class name="DemoTestCases.DemoTestCase5"/>
+      <class name="DemoTestCases.DemoTestCase6"/>
+    </classes>
+  </test> <!-- TestSecondModule -->
+  
+</suite> <!-- DemoTestSuite -->

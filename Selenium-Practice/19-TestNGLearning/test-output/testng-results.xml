@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="0" total="14" passed="11">
+  <reporter-output>
+    <line>
+      <![CDATA[<a target='_blank' href='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg'><img src='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg' height=50 width=50/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg'><img src='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg' height=50 width=50/></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="114" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="114" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+      <class name="TestCases.TestBeforeAfterTestCase_3">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestBeforeAfterTestCase_3@1f36e637]" name="LaunchBrowser" is-config="true" duration-ms="2" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestBeforeAfterTestCase_3@1f36e637]" name="TestFacebookRegistration" duration-ms="2" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestBeforeAfterTestCase_3@1f36e637]" name="QuitBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+      </class> <!-- TestCases.TestBeforeAfterTestCase_3 -->
+      <class name="TestCases.TestAssertTrue_7">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestAssertTrue_7@3dd4520b]" name="LaunchBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestAssertTrue_7@3dd4520b]" name="TestFacebookRegistration" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestAssertTrue_7@3dd4520b]" name="QuitBrowser" is-config="true" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+      </class> <!-- TestCases.TestAssertTrue_7 -->
+      <class name="TestCases.TestAnno_1">
+        <test-method status="PASS" signature="TestFooter()[pri:0, instance:TestCases.TestAnno_1@5c5a1b69]" name="TestFooter" duration-ms="5" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFooter -->
+        <test-method status="PASS" signature="TestHeade()[pri:0, instance:TestCases.TestAnno_1@5c5a1b69]" name="TestHeade" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHeade -->
+        <test-method status="PASS" signature="TestNumberOfLinks()[pri:0, instance:TestCases.TestAnno_1@5c5a1b69]" name="TestNumberOfLinks" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumberOfLinks -->
+        <test-method status="PASS" signature="TestTitle()[pri:0, instance:TestCases.TestAnno_1@5c5a1b69]" name="TestTitle" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestTitle -->
+      </class> <!-- TestCases.TestAnno_1 -->
+      <class name="TestCases.TestBeforeAfterAllTestCases_4">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestBeforeAfterAllTestCases_4@610694f1]" name="LaunchBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestBeforeAfterAllTestCases_4@610694f1]" name="TestFacebookRegistration" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestBeforeAfterAllTestCases_4@610694f1]" name="QuitBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+      </class> <!-- TestCases.TestBeforeAfterAllTestCases_4 -->
+      <class name="TestCases.TestForceFullyFail_5">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestForceFullyFail_5@43814d18]" name="LaunchBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestForceFullyFail_5@43814d18]" name="TestFacebookRegistration" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestForceFullyFail_5@43814d18]" name="QuitBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+      </class> <!-- TestCases.TestForceFullyFail_5 -->
+      <class name="TestCases.TestTryCatchScreenShot_11">
+        <test-method status="FAIL" signature="TesCaseTryCatchFailedForScreenShot()[pri:1, instance:TestCases.TestTryCatchScreenShot_11@2758fe70]" name="TesCaseTryCatchFailedForScreenShot" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TesCaseTryCatchFailedForScreenShot Test Case is failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TesCaseTryCatchFailedForScreenShot Test Case is failed.
+at org.testng.Assert.fail(Assert.java:96)
+at TestCases.TestTryCatchScreenShot_11.TesCaseTryCatchFailedForScreenShot(TestTryCatchScreenShot_11.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target='_blank' href='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg'><img src='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg' height=50 width=50/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TesCaseTryCatchFailedForScreenShot -->
+      </class> <!-- TestCases.TestTryCatchScreenShot_11 -->
+      <class name="TestCases.TestDependOn_9">
+        <test-method status="FAIL" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestDependOn_9@3701eaf6]" name="TestFacebookRegistration" duration-ms="2" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration Test Case is failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration Test Case is failed
+at org.testng.Assert.fail(Assert.java:96)
+at TestCases.TestDependOn_9.TestFacebookRegistration(TestDependOn_9.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target='_blank' href='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg'><img src='D:\Rajan\Selenium-Practice\19-TestNGLearning\src\test\resources\screenshots\failure\fail-login-test.jpg' height=50 width=50/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+      </class> <!-- TestCases.TestDependOn_9 -->
+      <class name="TestCases.TestPriority_2">
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestPriority_2@627551fb]" name="TestFacebookRegistration" duration-ms="2" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+      </class> <!-- TestCases.TestPriority_2 -->
+      <class name="TestCases.TestAssertEquals_6">
+        <test-method status="PASS" signature="SetDBConnection()[pri:0, instance:TestCases.TestAssertEquals_6@23e028a9]" name="SetDBConnection" is-config="true" duration-ms="14" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDBConnection -->
+        <test-method status="PASS" signature="SetDBConnection()[pri:0, instance:TestCases.TestAssertTrue_7@3dd4520b]" name="SetDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDBConnection -->
+        <test-method status="PASS" signature="SetDBConnection()[pri:0, instance:TestCases.TestForceFullyFail_5@43814d18]" name="SetDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDBConnection -->
+        <test-method status="PASS" signature="SetDBConnection()[pri:0, instance:TestCases.TestBeforeAfterAllTestCases_4@610694f1]" name="SetDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDBConnection -->
+        <test-method status="PASS" signature="SetDBConnection()[pri:0, instance:TestCases.TestMultipleAssertionTestCase_8@5ae63ade]" name="SetDBConnection" is-config="true" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDBConnection -->
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestAssertEquals_6@23e028a9]" name="LaunchBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestAssertEquals_6@23e028a9]" name="TestFacebookRegistration" duration-ms="3" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestAssertEquals_6@23e028a9]" name="QuitBrowser" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:TestCases.TestAssertTrue_7@3dd4520b]" name="CloseDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDBConnection -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:TestCases.TestBeforeAfterAllTestCases_4@610694f1]" name="CloseDBConnection" is-config="true" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDBConnection -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:TestCases.TestAssertEquals_6@23e028a9]" name="CloseDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDBConnection -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:TestCases.TestForceFullyFail_5@43814d18]" name="CloseDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDBConnection -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:TestCases.TestMultipleAssertionTestCase_8@5ae63ade]" name="CloseDBConnection" is-config="true" duration-ms="0" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDBConnection -->
+      </class> <!-- TestCases.TestAssertEquals_6 -->
+      <class name="TestCases.TestMultipleAssertionTestCase_8">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.TestMultipleAssertionTestCase_8@5ae63ade]" name="LaunchBrowser" is-config="true" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestMultipleAssertionTestCase_8@5ae63ade]" name="TestFacebookRegistration" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="QuitBrowser()[pri:0, instance:TestCases.TestMultipleAssertionTestCase_8@5ae63ade]" name="QuitBrowser" is-config="true" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitBrowser -->
+      </class> <!-- TestCases.TestMultipleAssertionTestCase_8 -->
+      <class name="TestCases.TestSkipTestCaseForceFully_10">
+        <test-method status="SKIP" signature="TestFacebookRegistration()[pri:1, instance:TestCases.TestSkipTestCaseForceFully_10@2b552920]" name="TestFacebookRegistration" duration-ms="1" started-at="2019-05-30T11:55:08Z" finished-at="2019-05-30T11:55:08Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Registration link is disabled]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Registration link is disabled
+at TestCases.TestSkipTestCaseForceFully_10.TestFacebookRegistration(TestSkipTestCaseForceFully_10.java:12)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+      </class> <!-- TestCases.TestSkipTestCaseForceFully_10 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

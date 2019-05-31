@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+
+		<listener class-name="listeners.TestListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+	</listeners>
+
+
+
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="TestCases.TestAnno_1" />
+			<class name="TestCases.TestAssertEquals_6" />
+			<class name="TestCases.TestAssertTrue_7" />
+			<class name="TestCases.TestDependOn_9" />
+			<class name="TestCases.TestPriority_2" />
+			<class name="TestCases.TestMultipleAssertionTestCase_8" />
+			<class name="TestCases.TestSkipTestCaseForceFully_10" />
+			<class name="TestCases.TestBeforeAfterAllTestCases_4" />
+			<class name="TestCases.TestTryCatchScreenShot_11" />
+			<class name="TestCases.TestForceFullyFail_5" />
+			<class name="TestCases.TestBeforeAfterTestCase_3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

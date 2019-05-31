@@ -1,0 +1,42 @@
+package TestCases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestBeforeAfterTestCase_3 {
+	
+	@BeforeMethod
+	public void LaunchBrowser()
+	{
+		
+	}
+	
+	@AfterMethod
+	public void QuitBrowser()
+	{
+		System.out.println("quit browser");
+	}
+	
+	@Test(priority = 3)
+	public void TestFacebookDashBoard() {
+		
+	}
+	
+	@Test(priority = 2)
+	public void TestFaceBookLogin() {
+		
+	}
+	
+	@Test(priority = 4)
+	public void TestProfiles()
+	{
+		
+	}
+	
+	@Test(priority = 1)
+	public void TestFacebookRegistration()
+	{
+		
+	}
+}

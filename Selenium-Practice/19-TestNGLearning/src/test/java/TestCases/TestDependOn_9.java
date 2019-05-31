@@ -1,0 +1,22 @@
+package TestCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestDependOn_9 {
+	
+	@Test(priority = 1)
+	public void TestFacebookRegistration()
+	{
+			//if this test case is failed, then login test case should not be executed.
+			//the login test case must depends upon this test case
+			Assert.fail("Registration Test Case is failed");
+	}
+	
+	@Test(priority = 2, dependsOnMethods  = "TestFacebookRegistration")
+	public void TestFaceBookLogin() {
+		
+		Boolean isLoginSuccessful = false;
+		Assert.assertTrue(isLoginSuccessful, "Login Test Failed");				
+	}
+}

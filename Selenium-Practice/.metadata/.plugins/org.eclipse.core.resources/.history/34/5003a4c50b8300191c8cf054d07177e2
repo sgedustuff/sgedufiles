@@ -1,0 +1,52 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestFrame {
+
+	public static void main(String[] args) throws InterruptedException {
+		//System.setProperty("webdriver.gecko.driver","C:\\Users\\jhon\\Downloads\\Drivers\\geckodriver.exe");
+		
+	    WebDriver driver = new FirefoxDriver();
+	    driver.get("http://way2automation.com/way2auto_jquery/index.php");
+	    
+	    //adding this line, for commenting thread.sleep
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+	    
+	    
+		System.out.println(driver.getTitle());	
+	    driver.findElement(By.cssSelector("div#load_box>form>div>div:nth-child(1)>p>a")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("#login>form>fieldset:nth-child(5)>input")).sendKeys("garg");
+		driver.findElement(By.cssSelector("#login>form>fieldset:nth-child(6)>input")).sendKeys("Yatin@94");
+		driver.findElement(By.cssSelector("#login>form>div>div:nth-child(2)>input")).click();
+	    //Thread.sleep(1000);
+		driver.findElement(By.linkText("Alert")).click();
+		//Thread.sleep(2000);
+		
+		driver.findElement(By.partialLinkText("INPUT")).click();
+		
+		WebElement b = driver.findElement(By.className("demo-frame"));
+		System.out.println("get frame");
+		//List<WebElement> frames = driver.findElements(By.className("demo-frame"));
+		
+		driver.switchTo().frame(b);
+		System.out.println("in frame");
+		//driver.switchTo().frame(frames.get(0));
+		
+	
+		Thread.sleep(5000);
+		
+		//driver.findElement(By.tagName("button")).click();		
+		driver.findElement(By.xpath("/html/body/button")).click();
+		System.out.println("frame-button-clicked");
+		
+		driver.switchTo().alert();
+
+	}
+
+}

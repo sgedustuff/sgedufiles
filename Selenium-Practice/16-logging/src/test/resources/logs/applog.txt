@@ -1,0 +1,5 @@
+INFO    2019-05-26 13:59:00,091 [main] TestLogging  - 1-info-message
+ERROR   2019-05-26 13:59:00,093 [main] TestLogging  - 3-error-message
+ERROR   2019-05-26 13:59:00,094 [main] TestLogging  - error in try block
+java.lang.ArithmeticException: / by zero
+	at TestLogging.main(TestLogging.java:18)

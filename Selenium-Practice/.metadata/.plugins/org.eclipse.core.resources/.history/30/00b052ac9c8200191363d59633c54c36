@@ -1,0 +1,21 @@
+package TestCases;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class TestTryCatchScreenShot_11 {
+	
+	
+	@Test(priority = 1)
+	public void TestFacebookRegistration()
+	{
+		
+		try {
+			Assert.fail("Registration Test Case is failed.");
+		} catch (Exception e) {
+			Reporter.log("<a target='_blank' href=''><img src='' height=200 width=200/></a>");
+		}
+		
+	}
+
+}

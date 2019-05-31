@@ -1,0 +1,81 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TestFrame {
+
+	public static void main(String[] args) throws InterruptedException {
+		//System.setProperty("webdriver.gecko.driver","C:\\Users\\jhon\\Downloads\\Drivers\\geckodriver.exe");
+		
+	    WebDriver driver = new ChromeDriver();
+	    driver.get("http://way2automation.com/way2auto_jquery/index.php");
+	    
+	    //adding this line, for commenting thread.sleep
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+	    
+	    
+		System.out.println(driver.getTitle());	
+	    
+		
+		driver.findElement(By.cssSelector("div#load_box>form>div>div:nth-child(1)>p>a")).click();
+		
+		
+		
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("#login>form>fieldset:nth-child(5)>input")).sendKeys("garg");
+		driver.findElement(By.cssSelector("#login>form>fieldset:nth-child(6)>input")).sendKeys("Yatin@94");
+		driver.findElement(By.cssSelector("#login>form>div>div:nth-child(2)>input")).click();
+	    //Thread.sleep(1000);
+		
+		
+		System.out.println("clicking-alert tab");
+		
+		//driver.findElement(By.linkText("Alert")).click();
+		//driver.findElement(By.xpath("//*[@id='toggleNav']/li[7]/a")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30l);
+		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Alert"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='toggleNav']/li[7]/a"))).click();
+		
+		
+		//
+		System.out.println("clicked-alert tab");
+		//Thread.sleep(2000);
+		
+		System.out.println("clicking-input-alert");
+		//driver.findElement(By.partialLinkText("INPUT")).click();
+		//driver.findElement(By.partialLinkText("//*[@id=\"wrapper\"]/div/div[1]/div[1]/ul/li[2]/a")).click();		
+		wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("INPUT"))).click();
+		System.out.println("clicked-input-alert");
+		
+		//WebElement b = driver.findElement(By.className("demo-frame"));
+		
+		List<WebElement> frames = driver.findElements(By.className("demo-frame"));
+		System.out.println("get frame");
+		
+		//driver.switchTo().frame(b);		
+		driver.switchTo().frame(frames.get(1));
+		System.out.println("in frame");
+		
+	
+		Thread.sleep(5000);
+		
+		//driver.findElement(By.tagName("button")).click();		
+		driver.findElement(By.xpath("/html/body/button")).click();
+		System.out.println("frame-button-clicked");
+		
+		driver.switchTo().alert();
+		
+		driver.close();
+
+	}
+
+}

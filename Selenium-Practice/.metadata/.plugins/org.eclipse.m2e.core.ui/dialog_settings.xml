@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Rajan\Selenium-Practice\18-database"/>
+			<item value="D:\Rajan\Selenium-Practice\17-mail"/>
+			<item value="D:\Rajan\Selenium-Practice\14-read-properties"/>
+			<item value="D:\Rajan\Selenium-Practice\1-LaunchBrowsers"/>
+			<item value="D:\Rajan\Selenium-Practice\6-automate-reg-form"/>
+			<item value="D:\Rajan\Selenium-Practice\8-google-search"/>
+			<item value="D:\Rajan\Selenium-Practice\2-maven-launch-browsers"/>
+			<item value="D:\Rajan\Selenium-Practice\3-type-login-id-gmail"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.testinfo"/>
+			<item value="com.test.info"/>
+			<item value="com.test"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="10-1-flipkart-menus"/>
+			<item value="19-TestNGLearning"/>
+			<item value="18-database"/>
+			<item value="17-mail"/>
+			<item value="16-logging"/>
+			<item value="15-login-gmail-properties-optimized"/>
+			<item value="14-read-properties"/>
+			<item value="13-frames-popups-hdfc"/>
+			<item value="12-frames-w3schools"/>
+			<item value="11-action-mouse-over"/>
+			<item value="10-test-checkbox"/>
+			<item value="9-is-display"/>
+			<item value="8-google-search"/>
+			<item value="7-make-my-trip-drop-down"/>
+			<item value="6-automate-reg-form"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

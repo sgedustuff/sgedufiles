@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemoTestSuite]">
+  <test name="TestSecondModule(failed)">
+    <classes>
+      <class name="DemoTestCases.DemoTestCase6">
+        <methods>
+          <include name="demoFailTest"/>
+          <include name="demoFailAnotherTest"/>
+          <include name="demoSkipTest"/>
+        </methods>
+      </class> <!-- DemoTestCases.DemoTestCase6 -->
+      <class name="DemoTestCases.DemoTestCase3">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- DemoTestCases.DemoTestCase3 -->
+      <class name="DemoTestCases.DemoTestCase4">
+        <methods>
+          <include name="init"/>
+          <include name="closeBrowser"/>
+          <include name="dispose"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- DemoTestCases.DemoTestCase4 -->
+      <class name="DemoTestCases.DemoTestCase5">
+        <methods>
+          <include name="init"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="dispose"/>
+        </methods>
+      </class> <!-- DemoTestCases.DemoTestCase5 -->
+    </classes>
+  </test> <!-- TestSecondModule(failed) -->
+</suite> <!-- Failed suite [DemoTestSuite] -->

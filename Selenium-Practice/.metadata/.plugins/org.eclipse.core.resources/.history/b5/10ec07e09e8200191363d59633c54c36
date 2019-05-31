@@ -1,0 +1,22 @@
+package TestCases;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class TestTryCatchScreenShot_11 {
+	
+	
+	@Test(priority = 1)
+	public void TesCaseTryCatchFailedForScreenShot()
+	{
+		
+		try {
+			Assert.fail("TesCaseTryCatchFailedForScreenShot Test Case is failed.");
+		} catch (Exception e) {
+			//Reporter.log("<a target='_blank' href='.\\src\\test\\resources\\screenshots\\failure'><img src='.\\src\\test\\resources\\screenshots\\failure' height=50 width=50/></a>");
+			Reporter.log("Steps to overcome fail test case");
+		}
+		
+	}
+
+}

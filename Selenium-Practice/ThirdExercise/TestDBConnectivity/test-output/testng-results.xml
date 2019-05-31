@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="336" started-at="2016-07-20T07:44:50Z" finished-at="2016-07-20T07:44:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="336" started-at="2016-07-20T07:44:50Z" finished-at="2016-07-20T07:44:50Z">
+      <class name="TestDBFunctionality">
+        <test-method status="PASS" signature="TestDBSelectResult()[pri:0, instance:TestDBFunctionality@2669b199]" name="TestDBSelectResult" duration-ms="308" started-at="2016-07-20T13:14:50Z" finished-at="2016-07-20T13:14:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDBSelectResult -->
+      </class> <!-- TestDBFunctionality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

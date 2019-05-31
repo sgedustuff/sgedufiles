@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="DBConfig"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="TestConfig"/>
+			<item value="/*"/>
+			<item value="&#x0D;&#x0A;&#x09;&#x09;steps to implement logging&#x0D;&#x0A;&#x09;&#x09;1) refer log4j jar file&#x0D;&#x0A;&#x09;&#x09;2) refer log4j.properties file&#x0D;&#x0A;&#x09;&#x09;3) load the properties&#x0D;&#x0A;&#x09;&#x09;4) create the object of logger by calling getLogger Method&#x0D;&#x0A;&#x09;&#x09;5) call method(like info, debug, error) on the object of logger for logging the message&#x0D;&#x0A;&#x09;&#x09;"/>
+			<item value="driver.get(&quot;http://www.gmail.com&quot;);"/>
+			<item value="driver.get(&quot;https://jqueryui.com/resources/demos/slider/default.html&quot;);"/>
+			<item value="WebElement email = driver.findElement(By.xpath(&quot;//*[@id=\&quot;identifierId\&quot;]&quot;));"/>
+			<item value="String errtext = null;"/>
+			<item value="List&lt;WebElement&gt; lstInputs = driver.findElements(By.tagName(&quot;input&quot;));"/>
+			<item value="driver.quit();"/>
+		</list>
+		<list key="replacehistory">
+			<item value="DBConfig"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="594"/>
+		<item key="DIALOG_Y_ORIGIN" value="265"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="390"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="452"/>
+		<item key="DIALOG_Y_ORIGIN" value="248"/>
+	</section>
+</section>

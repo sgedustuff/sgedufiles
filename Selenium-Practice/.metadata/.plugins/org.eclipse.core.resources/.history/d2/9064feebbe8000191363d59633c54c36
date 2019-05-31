@@ -1,0 +1,28 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+public class TestPriority {
+
+	@Test
+	public void TestFacebookDashBoard() {
+		
+	}
+	
+	@Test
+	public void TestFaceBookLogin() {
+		
+	}
+	
+	@Test
+	public void TestProfiles()
+	{
+		
+	}
+	
+	@Test
+	public void TestFacebookRegistration()
+	{
+		
+	}
+}

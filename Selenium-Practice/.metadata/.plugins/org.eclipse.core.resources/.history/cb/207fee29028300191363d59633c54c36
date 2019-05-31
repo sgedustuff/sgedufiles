@@ -1,0 +1,85 @@
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GoogleSearch {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver  driver = new ChromeDriver();
+
+        driver.get("https://google.com");
+
+        driver.manage().window().maximize();
+
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+        
+      
+       
+
+        //WebElement dropdown = driver.findElement(By.name("q"));
+        
+        WebElement dropdown = driver.findElement(By.name("q"));
+
+       
+
+        dropdown.sendKeys("selenium");
+
+       
+
+        Thread.sleep(3000);
+
+        List <WebElement> dropdownlist = driver.findElements(By.cssSelector("ul[role='listbox']"));
+
+       
+
+              
+
+        for(WebElement element : dropdownlist)
+
+        {
+
+               System.out.println(element.getText());
+
+              
+
+        }
+
+       
+
+        driver.close();
+
+       
+
+                    
+
+                    
+
+       
+
+        /*
+
+        --------------------------------------------------------------------------
+
+       
+
+       
+
+        /*System.out.println("Matching words are :"+values);
+
+       
+
+       
+
+        /*System.out.println(values.get(7).getText());
+
+        driver.findElement(By.name("btnK")).click();*/
+
+	}
+
+}
