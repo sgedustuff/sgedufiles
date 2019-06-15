@@ -1,0 +1,29 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LandingPage {
+
+	WebDriver driver;
+	
+	public LandingPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	public void updateStatus()
+	{
+		
+	}
+	
+	public void goToProfile()
+	{
+		driver.findElement(By.xpath("//*[@id=\"navItem_100002286822789\"]/a/div")).click();
+	}
+	
+	public void goToPages()
+	{
+		
+	}
+}

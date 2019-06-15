@@ -15,7 +15,14 @@
 alt+shift+z = select statement and press the shortcut key, u will see the list templates.
 	 = without select statement, allow u to create templates
 
+//maximize - restore
+ctrl + m
+
+//list all shortcuts
+ctrl+shift+l
+
 //open-close
+------------------
 1) ctrl+shift+f4 = close all files
 2) ctrl+f4 = close selected file.
 3) ctrl + e = move in currently opened files.

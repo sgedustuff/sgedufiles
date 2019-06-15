@@ -1,0 +1,27 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class TestHomePage {
+	
+		WebDriver driver;
+		
+		public void doLogin(String unm, String pass)
+		{
+			driver.findElement(By.id("email")).sendKeys(unm);
+			driver.findElement(By.id("pass")).sendKeys(pass);
+			driver.findElement(By.id("loginbutton")).click();
+		}
+		
+		public void createAccount(String fnm, String lnm)
+		{
+			
+		}
+		
+		public void validateLinks()
+		{
+			
+		}
+	
+}

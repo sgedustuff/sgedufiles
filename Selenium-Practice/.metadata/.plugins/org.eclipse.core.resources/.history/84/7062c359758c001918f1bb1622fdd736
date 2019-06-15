@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Application">
+
+ <listeners>
+ 	<listener class-name = "listeners.CustomListener"/>
+ 	<listener class-name = "org.uncommons.reportng.HTMLReporter"/>
+ </listeners>
+
+	<test  name="Login Test">
+		<classes>			
+			<class name="testcases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test  name="Upload Photo Test">
+		<classes>			
+			<class name="testcases.UploadPhotoTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test  name="Opening Account Test">
+		<classes>			
+			<class name="testcases.OpenAccountTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->

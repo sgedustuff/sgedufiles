@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 28.829 sec <<< FAILURE! - in TestSuite
+loginAsBankManager(testcases.BankManagerLoginTest)  Time elapsed: 0.273 sec  <<< FAILURE!
+java.lang.AssertionError: Bank Manager test failed forcefully
+	at org.testng.Assert.fail(Assert.java:96)
+	at testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:13)
+
+addCustomer(testcases.AddCustomerTest)  Time elapsed: 2.89 sec  <<< FAILURE!
+java.lang.AssertionError: Add customer test failed forcefully
+	at org.testng.Assert.fail(Assert.java:96)
+	at testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:29)
+
+openAccountTest(testcases.OpenAccountTest)  Time elapsed: 0.968 sec  <<< FAILURE!
+java.lang.AssertionError: Open account test failed forcefully
+	at org.testng.Assert.fail(Assert.java:96)
+	at testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:24)
+

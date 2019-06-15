@@ -13,6 +13,8 @@ public class TestFramePopUps {
 
 	public static void main(String[] args) throws InterruptedException {
 		
+		//below is the use case
+		
 		/*WebDriver driver = new ChromeDriver();
 		driver.get("https://www.hdfcbank.com/");
 		

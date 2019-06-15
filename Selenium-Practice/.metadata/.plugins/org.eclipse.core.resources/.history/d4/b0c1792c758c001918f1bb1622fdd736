@@ -1,0 +1,22 @@
+package base;
+
+import org.openqa.selenium.By;
+
+public class TopNavigation {
+	
+	public void logOut()
+	{
+		Page.driver.findElement(By.id("userNavigationLabel")).click();
+		Page.driver.findElement(By.xpath("//*[contains(text(),'Log Out')]")).click();
+	}
+	
+	public void doSearch()
+	{
+	
+	}
+	
+	public void goToLandingPage()
+	{
+		
+	}
+}

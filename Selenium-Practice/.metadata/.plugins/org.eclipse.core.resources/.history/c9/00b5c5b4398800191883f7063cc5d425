@@ -1,0 +1,44 @@
+package testcases;
+
+import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import base.BaseTestClass;
+import utilities.ExcelReader;
+
+public class AddCustomerTest extends BaseTestClass {
+
+	@Test(dataProvider = "getCustData")
+	public void addCustomer(String fnm, String lnm, String pcode)
+	{
+		//Customer added successfully
+		 click("add-cust-btn_CSS");
+		 type("first-nm_CSS",fnm);
+		 type("last-nm_CSS",lnm);
+		 type("post-code_CSS",pcode);
+		 click("add-act-cust-btn_CSS");
+		/*
+		 * Alert al = driver.switchTo().alert(); String alText = al.getText();
+		 * driver.switchTo().defaultContent();
+		 * Assert.assertTrue(alText.contains("Customer added successfully"),
+		 * "Add customer test case is failed");
+		 */
+	}
+	
+	@DataProvider
+	public Object[][] getCustData()
+	{		
+		String sheetName = "CustomerData";
+		int rowNum = excel.getRowCount(sheetName);
+		int colNum = excel.getColumnCount(sheetName);
+		Object[][] data = new Object[rowNum - 1][colNum];
+		for (int rows = 2; rows <= rowNum; rows++) {
+			for (int cols = 0; cols < colNum; cols++) {
+				data[rows - 2][cols] = excel.getCellData(sheetName, cols, rows);
+			}
+		}
+		return data;
+	}
+}

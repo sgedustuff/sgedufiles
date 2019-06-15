@@ -1,0 +1,71 @@
+package testngparallel;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class TestNGSequence_Parallel_1 {
+
+	WebDriver driver;
+	
+	@BeforeMethod
+	@Parameters({"browser"})
+	public void launchBrowser(String b) {	
+		
+		System.out.println("for browser=>" + b);
+		if (b.equals("chrome")) {
+			driver = new ChromeDriver();
+		} else if (b.equals("firefox")) {
+			driver = new FirefoxDriver();
+		} else {
+			DesiredCapabilities capa = DesiredCapabilities.internetExplorer();
+			capa.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capa.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+			driver = new InternetExplorerDriver(capa);
+		}
+		driver.get("https://www.gmail.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
+	}
+
+	@Test(dataProvider = "getCredentials")
+	public void login(String unm, String pass) {
+			System.out.println("for user=>" + unm );
+			driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys(unm);
+	}
+
+	@AfterMethod
+	@Parameters({"browser"})
+	public void quitBrowser(String b)
+	{
+		System.out.println("quit browser=>" + b);
+		driver.quit();
+	}
+	
+	@DataProvider
+	public Object[][] getCredentials() {
+		Object[][] data = new Object[3][2];
+
+		data[0][0] = "username1@gmail.com";
+		data[0][1] = "password1";
+
+		data[1][0] = "username2@gmail.com";
+		data[1][1] = "password2";
+
+		data[2][0] = "username3@gmail.com";
+		data[2][1] = "password3";
+
+		return data;
+	}
+
+}

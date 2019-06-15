@@ -1,0 +1,19 @@
+package base;
+
+public class TopNavigation {
+	
+	public void logOut()
+	{
+	
+	}
+	
+	public void doSearch()
+	{
+	
+	}
+	
+	public void goToLandingPage()
+	{
+		
+	}
+}

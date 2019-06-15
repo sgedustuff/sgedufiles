@@ -1,0 +1,26 @@
+package testcases;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import base.BaseTestClass;
+import utilities.TestUtils;
+
+public class OpenAccountTest extends BaseTestClass {
+
+	@Test(dataProvider = "getAccountData")
+	public void openAccountTest(String cust, String curr)
+	{
+		click("open-act-btn_CSS");
+		select("customer_CSS", cust);
+		select("currency_CSS", curr);
+		click("process_CSS");
+	}
+	
+	@DataProvider
+	public Object[][] getAccountData()
+	{
+		String sheetName = "AccountData";
+		Object[][] data = TestUtils.getData(sheetName);
+		return data;
+	}
+}

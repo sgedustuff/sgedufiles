@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_26_IST_2019.jpg'>Screen Shot Link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_26_IST_2019.jpg'><img src='Thu_Jun_06_18_03_26_IST_2019.jpg' height=200 width=200 /></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_29_IST_2019.jpg'>Screen Shot Link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_29_IST_2019.jpg'><img src='Thu_Jun_06_18_03_29_IST_2019.jpg' height=200 width=200 /></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_31_IST_2019.jpg'>Screen Shot Link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_31_IST_2019.jpg'><img src='Thu_Jun_06_18_03_31_IST_2019.jpg' height=200 width=200 /></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Test Application" duration-ms="5493" started-at="2019-06-06T12:33:26Z" finished-at="2019-06-06T12:33:31Z">
+    <groups>
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="757" started-at="2019-06-06T12:33:26Z" finished-at="2019-06-06T12:33:26Z">
+      <class name="testcases.BankManagerLoginTest">
+        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:testcases.BankManagerLoginTest@5e0826e7]" name="loginAsBankManager" duration-ms="267" started-at="2019-06-06T12:33:26Z" finished-at="2019-06-06T12:33:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Bank Manager test failed forcefully]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Bank Manager test failed forcefully
+at org.testng.Assert.fail(Assert.java:96)
+at testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_26_IST_2019.jpg'>Screen Shot Link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_26_IST_2019.jpg'><img src='Thu_Jun_06_18_03_26_IST_2019.jpg' height=200 width=200 /></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Test" duration-ms="3358" started-at="2019-06-06T12:33:26Z" finished-at="2019-06-06T12:33:30Z">
+      <class name="testcases.AddCustomerTest">
+        <test-method status="FAIL" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@1aa7ecca]" name="addCustomer" duration-ms="2888" started-at="2019-06-06T12:33:26Z" data-provider="getCustData" finished-at="2019-06-06T12:33:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[arorat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rajanp]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Add customer test failed forcefully]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Add customer test failed forcefully
+at org.testng.Assert.fail(Assert.java:96)
+at testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_29_IST_2019.jpg'>Screen Shot Link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_29_IST_2019.jpg'><img src='Thu_Jun_06_18_03_29_IST_2019.jpg' height=200 width=200 /></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+    <test name="Opening Account Test" duration-ms="1340" started-at="2019-06-06T12:33:30Z" finished-at="2019-06-06T12:33:31Z">
+      <class name="testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@2a798d51]" name="setUp" is-config="true" duration-ms="22018" started-at="2019-06-06T12:33:04Z" finished-at="2019-06-06T12:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="openAccountTest(java.lang.String, java.lang.String)[pri:0, instance:testcases.OpenAccountTest@2a798d51]" name="openAccountTest" duration-ms="972" started-at="2019-06-06T12:33:30Z" data-provider="getAccountData" finished-at="2019-06-06T12:33:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajant arorat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dollar]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Open account test failed forcefully]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Open account test failed forcefully
+at org.testng.Assert.fail(Assert.java:96)
+at testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_31_IST_2019.jpg'>Screen Shot Link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href='Thu_Jun_06_18_03_31_IST_2019.jpg'><img src='Thu_Jun_06_18_03_31_IST_2019.jpg' height=200 width=200 /></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.OpenAccountTest@2a798d51]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-06-06T12:33:31Z" finished-at="2019-06-06T12:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.OpenAccountTest -->
+    </test> <!-- Opening Account Test -->
+  </suite> <!-- Test Application -->
+</testng-results>

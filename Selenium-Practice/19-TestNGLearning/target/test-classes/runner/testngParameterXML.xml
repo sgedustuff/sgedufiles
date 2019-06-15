@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestParameterizationSuite">
+
+	
+
+	<!-- below parameters at suite level, u can refer in any test case -->
+
+	<parameter name="fnms"  value="firstname1"/>
+	<parameter name="lnms"  value="lastname1"/>
+	
+<!--  u can define parameter at test level -->
+<!-- it will be accessed in all testcases of that test -->
+
+	<test thread-count="5" name="TestParameterizationFromXML">
+	<parameter name="mnms"  value="middlename1"/>
+		<classes>
+			<class name="TestCases.TestParameterization_FromTestNGXML_13" />			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

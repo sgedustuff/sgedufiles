@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Rajan\Selenium-Practice\21-TestNg-Groups"/>
 			<item value="D:\Rajan\Selenium-Practice\18-database"/>
 			<item value="D:\Rajan\Selenium-Practice\17-mail"/>
 			<item value="D:\Rajan\Selenium-Practice\14-read-properties"/>
@@ -21,6 +22,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -58,6 +60,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="23-PageObjectModel"/>
+			<item value="22-data-driven-framework"/>
+			<item value="21-TestNg-Groups"/>
+			<item value="20-TestNGParallel"/>
 			<item value="10-1-flipkart-menus"/>
 			<item value="19-TestNGLearning"/>
 			<item value="18-database"/>
@@ -69,10 +75,6 @@
 			<item value="12-frames-w3schools"/>
 			<item value="11-action-mouse-over"/>
 			<item value="10-test-checkbox"/>
-			<item value="9-is-display"/>
-			<item value="8-google-search"/>
-			<item value="7-make-my-trip-drop-down"/>
-			<item value="6-automate-reg-form"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -92,6 +94,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Rajan\Selenium-Practice\22-data-driven-framework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

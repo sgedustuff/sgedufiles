@@ -1,0 +1,34 @@
+package rough;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import pages.HomePage;
+
+public class LoginTest {
+
+	public static void main(String[] args) {
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("profile.default_content_setting_values.notifications", 2);
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", prefs);
+		options.addArguments("--disable-extensions");
+		options.addArguments("--disable-infobars");
+		
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("http://www.facebook.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
+		
+		HomePage hp = new HomePage(driver);
+		hp.doLogin("raajnarora@gmail.com", "Amrat@006");
+	}
+
+}

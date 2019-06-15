@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;pages.TestHomePage&apos; to &apos;HomePage&apos;&#x0D;&#x0A;- Original project: &apos;23-PageObjectModel&apos;&#x0D;&#x0A;- Original element: &apos;pages.TestHomePage&apos;&#x0D;&#x0A;- Renamed element: &apos;pages.HomePage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestHomePage&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;pages{TestHomePage.java[TestHomePage" matchStrategy="1" name="HomePage" qualified="false" references="true" similarDeclarations="false" stamp="1559901578831" textual="false" version="1.0"/>
+</session>

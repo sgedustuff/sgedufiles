@@ -1,0 +1,11 @@
+IllegalStateException
+------------------------------
+	- if we don't refer driver.exe or while refeering path is incorrect.
+
+NoSuchSessionException
+--------------------------------------
+	- if we use driver.close and driver.quit together in firefox.
+
+NoSuchElementException / ElementNotTraceable
+---------------------------------------------------------------------
+

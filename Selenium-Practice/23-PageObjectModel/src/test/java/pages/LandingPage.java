@@ -1,0 +1,36 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import base.Page;
+
+public class LandingPage extends Page {
+
+	/*
+	 * WebDriver driver;
+	 * 
+	 * public LandingPage(WebDriver driver) { this.driver = driver; }
+	 */
+	
+	public void updateStatus()
+	{
+		
+	}
+	
+	/*public void goToProfile()
+	{
+		driver.findElement(By.xpath("//*[@id=\"navItem_100002286822789\"]/a/div")).click();
+	}*/
+	
+	public ProfilePage goToProfile()
+	{
+		driver.findElement(By.xpath("//*[@id=\"navItem_100002286822789\"]/a/div")).click();
+		return new ProfilePage();
+	}
+	
+	public void goToPages()
+	{
+		
+	}
+}

@@ -1,0 +1,25 @@
+package testcases;
+
+import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.BaseTestClass;
+
+public class AddCustomerTest extends BaseTestClass {
+
+	@Test
+	public void addCustomer()
+	{
+		//Customer added successfully
+		 click("add-cust-btn_CSS");
+		 type("first-nm_CSS","test-first-name-1");
+		 type("last-nm_CSS","test-last-name-1");
+		 type("post-code_CSS","test-postal-code-1");
+		 click("add-act-cust-btn_CSS");
+		 Alert al = driver.switchTo().alert();
+		 String alText = al.getText();
+		 driver.switchTo().defaultContent();
+		 Assert.assertTrue(alText.contains("Customer added successfully"), "Add customer test case is failed");
+	}
+}

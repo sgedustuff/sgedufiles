@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57" started-at="2019-06-04T10:19:53Z" finished-at="2019-06-04T10:19:53Z">
+    <groups>
+      <group name="low">
+        <method signature="TestGroups.TestFaceBookLogin()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestFaceBookLogin" class="testnglearning.TestGroups"/>
+        <method signature="TestGroups.TestFacebookRegistration()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestFacebookRegistration" class="testnglearning.TestGroups"/>
+      </group> <!-- low -->
+      <group name="medium">
+        <method signature="TestGroups.TestFaceBookLogin()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestFaceBookLogin" class="testnglearning.TestGroups"/>
+        <method signature="TestGroups.TestProfiles()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestProfiles" class="testnglearning.TestGroups"/>
+      </group> <!-- medium -->
+    </groups>
+    <test name="Test" duration-ms="57" started-at="2019-06-04T10:19:53Z" finished-at="2019-06-04T10:19:53Z">
+      <class name="testnglearning.TestGroups">
+        <test-method status="PASS" signature="TestFaceBookLogin()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestFaceBookLogin" duration-ms="15" started-at="2019-06-04T10:19:53Z" finished-at="2019-06-04T10:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFaceBookLogin -->
+        <test-method status="PASS" signature="TestFacebookRegistration()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestFacebookRegistration" duration-ms="5" started-at="2019-06-04T10:19:53Z" finished-at="2019-06-04T10:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFacebookRegistration -->
+        <test-method status="PASS" signature="TestProfiles()[pri:0, instance:testnglearning.TestGroups@2a2d45ba]" name="TestProfiles" duration-ms="2" started-at="2019-06-04T10:19:53Z" finished-at="2019-06-04T10:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestProfiles -->
+      </class> <!-- testnglearning.TestGroups -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

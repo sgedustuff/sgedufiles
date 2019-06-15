@@ -22,7 +22,7 @@ public class TestAnno_1 {
 	}
 	
 	@Test
-	public void TestHeade()
+	public void TestHeader()
 	{
 		
 	}

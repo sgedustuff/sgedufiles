@@ -1,0 +1,22 @@
+package pages;
+
+public class TestHomePage {
+	
+		WebDriver driver;
+		
+		public void doLogin(String unm, String pass)
+		{
+			
+		}
+		
+		public void createAccount(String fnm, String lnm)
+		{
+			
+		}
+		
+		public void validateLinks()
+		{
+			
+		}
+	
+}

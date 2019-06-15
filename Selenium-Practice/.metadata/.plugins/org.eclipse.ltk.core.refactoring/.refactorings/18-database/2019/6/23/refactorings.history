@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;22-data-driven-framework/src/test/java/utilities&apos;&#x0D;&#x0A;- Original project: &apos;18-database&apos;&#x0D;&#x0A;- Destination element: &apos;22-data-driven-framework/src/test/java/utilities&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     utilities.DbManager.java&#x0D;&#x0A;     utilities.DBConfig.java" description="Copy compilation units" destination="=22-data-driven-framework/src\/test\/java&lt;utilities" element1="/src\/test\/java&lt;utilities{DbManager.java" element2="/src\/test\/java&lt;utilities{DBConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1559646859397" units="2" version="1.0"/>
+</session>

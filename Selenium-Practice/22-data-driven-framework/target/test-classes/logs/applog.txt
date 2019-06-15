@@ -1,0 +1,19 @@
+INFO    2019-06-07 12:38:57,355 [main] base.BaseTestClass  - Config property file is loaded
+INFO    2019-06-07 12:38:57,357 [main] base.BaseTestClass  - OR property file is loaded
+INFO    2019-06-07 12:38:57,615 [main] base.BaseTestClass  - MY SQL connection established successfully.
+INFO    2019-06-07 12:39:16,627 [main] base.BaseTestClass  - Chrome browser launched
+INFO    2019-06-07 12:39:20,500 [main] base.BaseTestClass  - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2019-06-07 12:39:21,764 [main] base.BaseTestClass  - Clicking on an Element : bnk-mgr-login-btn_CSS
+INFO    2019-06-07 12:39:21,892 [main] base.BaseTestClass  - Element is found :  add-cust-btn_CSS
+INFO    2019-06-07 12:39:22,540 [main] base.BaseTestClass  - Clicking on an Element : add-cust-btn_CSS
+INFO    2019-06-07 12:39:22,747 [main] base.BaseTestClass  - Typing in an Element :  first-nm_CSS and entered the value as : rajant
+INFO    2019-06-07 12:39:22,828 [main] base.BaseTestClass  - Typing in an Element :  last-nm_CSS and entered the value as : arorat
+INFO    2019-06-07 12:39:22,914 [main] base.BaseTestClass  - Typing in an Element :  post-code_CSS and entered the value as : rajanp
+INFO    2019-06-07 12:39:23,009 [main] base.BaseTestClass  - Clicking on an Element : add-act-cust-btn_CSS
+INFO    2019-06-07 12:39:25,015 [main] base.BaseTestClass  - Alert is found
+INFO    2019-06-07 12:39:25,513 [main] base.BaseTestClass  - Clicking on an Element : open-act-btn_CSS
+INFO    2019-06-07 12:39:25,741 [main] base.BaseTestClass  - rajant arorat is selected from dropdown customer_CSS
+INFO    2019-06-07 12:39:25,841 [main] base.BaseTestClass  - Dollar is selected from dropdown currency_CSS
+INFO    2019-06-07 12:39:25,930 [main] base.BaseTestClass  - Clicking on an Element : process_CSS
+INFO    2019-06-07 12:39:25,931 [main] base.BaseTestClass  - Alert is found
+INFO    2019-06-07 12:39:27,738 [main] base.BaseTestClass  - Test case execution completed !!!

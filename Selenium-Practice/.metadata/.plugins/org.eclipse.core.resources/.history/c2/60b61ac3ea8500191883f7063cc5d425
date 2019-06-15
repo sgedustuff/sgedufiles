@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestParameterizationSuite">
+
+	
+
+	<parameter name="fnms"  value="firstname1"/>
+	<parameter name="lnms"  value="lastname1"/>
+	
+
+	<test thread-count="5" name="TestParameterizationFromXML">
+
+		<classes>
+			<class name="TestCases.TestParameterization_FromTestNGXML_13" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

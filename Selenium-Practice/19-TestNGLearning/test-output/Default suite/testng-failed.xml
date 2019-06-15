@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TestTryCatchScreenShot_11">
+      <class name="TestCases.TestParameterization_FromTestNGXML_13">
         <methods>
-          <include name="TesCaseTryCatchFailedForScreenShot"/>
+          <include name="signup"/>
         </methods>
-      </class> <!-- TestCases.TestTryCatchScreenShot_11 -->
+      </class> <!-- TestCases.TestParameterization_FromTestNGXML_13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

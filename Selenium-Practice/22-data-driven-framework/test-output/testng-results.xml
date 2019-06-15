@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Application" duration-ms="3463" started-at="2019-06-07T07:15:19Z" finished-at="2019-06-07T07:15:22Z">
+    <groups>
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="236" started-at="2019-06-07T07:15:19Z" finished-at="2019-06-07T07:15:19Z">
+      <class name="testcases.BankManagerLoginTest">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcases.BankManagerLoginTest@4116aac9]" name="loginAsBankManager" duration-ms="216" started-at="2019-06-07T07:15:19Z" finished-at="2019-06-07T07:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Test" duration-ms="2687" started-at="2019-06-07T07:15:19Z" finished-at="2019-06-07T07:15:22Z">
+      <class name="testcases.AddCustomerTest">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@6ad82709]" name="addCustomer" duration-ms="2674" started-at="2019-06-07T07:15:19Z" data-provider="getCustData" finished-at="2019-06-07T07:15:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[arorat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rajanp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+    <test name="Opening Account Test" duration-ms="519" started-at="2019-06-07T07:15:22Z" finished-at="2019-06-07T07:15:22Z">
+      <class name="testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@3bd82cf5]" name="setUp" is-config="true" duration-ms="19682" started-at="2019-06-07T07:14:59Z" finished-at="2019-06-07T07:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openAccountTest(java.lang.String, java.lang.String)[pri:0, instance:testcases.OpenAccountTest@3bd82cf5]" name="openAccountTest" duration-ms="516" started-at="2019-06-07T07:15:22Z" data-provider="getAccountData" finished-at="2019-06-07T07:15:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajant arorat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dollar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.OpenAccountTest@3bd82cf5]" name="tearDown" is-config="true" duration-ms="653" started-at="2019-06-07T07:15:22Z" finished-at="2019-06-07T07:15:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.OpenAccountTest -->
+    </test> <!-- Opening Account Test -->
+  </suite> <!-- Test Application -->
+</testng-results>

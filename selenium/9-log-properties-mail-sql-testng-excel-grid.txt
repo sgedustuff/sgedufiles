@@ -1,4 +1,10 @@
+
 ---------------------------log4j----------------------------------------------------------
+
+- where we keep our logs.
+- how to log info along with date and time stamp.
+- how many types of log levels
+- how to implement logging
 
 log4j = What points need to remember
 ------------------------------------
@@ -52,6 +58,8 @@ practical (1)
 
 
 -----------------------------javamail api----------------------------------------------------------
+- how to send email.
+
 
 - download the required for sending email from tutorialpoint.com site and developed own utility
 - inside test=>resources, create the utility package and put your class like "montioring email". take this class from existing project
@@ -62,6 +70,9 @@ practical (1)
 
 
 --------------------mysql-connector-java api-----------------------------------
+- do we have seperate jar files for each dbms.
+- default port of mysql 
+
 
 - mysql will have different jar file, sql server will have different jar file, oracle will have different jar file.
 - for microsoft sql server till 2012 is = JTDS (mvn repository)
@@ -80,6 +91,30 @@ practical (1)
 
 
 ----------------------------------------testng api----------------------------------------------------------
+
+
+- how to use testng and refer testng
+- convert method as test-case method
+- what is the default sequence of test case execution.
+- we have two test cases like a and b, we want to execute "b" test case after "a" test case
+- call particular method everytime, before executing test case
+- call particular method everytime, after executing test case
+- call particular method at first and only once
+- call particular method at last and only once
+- forcefully fail the test
+- compare actual and expected values 
+- compare true
+- if assertion is failed, which error is come?
+- handle various assertions coming up in single test-case method
+- if registration test case is failed, then login test case should not be executed at all
+- skip the test forcefully
+- what is test suite
+- what has to do before executing the testsuite.
+- how to execute test suite and what will we get after execution.
+- how to customize the test report for adding screen shot in case of test case
+- how to make the report more attarcative 
+
+
 
 - end goal, that how many test cases are executed, how many are passed and how many are failed.
 
@@ -398,13 +433,13 @@ Scenario = read excel file, a sheet has username and passwords of 10 users, just
 
 ---------------------------selenium grid----------------------------
 
-- mean to say about parallel testing or parallel test execution. this means same test case execution in firefox, same test case execution in chrome and so on = this is not the job grid, this is the job of testng.
+- mean to say about parallel testing or parallel test execution. this means same test case execution in firefox, same test case execution in chrome and so on = this is not the job of grid, this is the job of testng.
 
 - grid is basically distribution the test case execution among remote machines
 
-- if 10 machines are connected with main machine. the main machine is known as hub and 10 machines are known as hub.
+- if 10 machines are connected with main machine. the main machine is known as hub and 10 machines are known as node.
 
-- when the test will run on one machine, the same test will be distrivuted among remote machines. will it run parallel or simultaneoiously, that job is not of grid, that job is of testng.
+- when the test will run on one machine, the same test will be distributed among remote machines. will it run parallel or simultaneoiously, that job is not of grid, that job is of testng.
 
 
 scenario-1 = how testng will run test case parallel

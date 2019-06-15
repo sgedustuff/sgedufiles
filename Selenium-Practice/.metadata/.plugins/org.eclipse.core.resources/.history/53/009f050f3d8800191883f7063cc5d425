@@ -1,0 +1,10 @@
+#Bank Manager Login Test
+bnk-mgr-login-btn_CSS=body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button
+add-cust-btn_CSS=body > div.ng-scope > div > div.ng-scope > div > div.center > button:nth-child(1)
+
+#Add Customer Test
+first-nm_CSS=body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(1) > input
+last-nm_CSS=body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(2) > input
+post-code_CSS=body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(3) > input
+add-act-cust-btn_CSS=body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > button
+

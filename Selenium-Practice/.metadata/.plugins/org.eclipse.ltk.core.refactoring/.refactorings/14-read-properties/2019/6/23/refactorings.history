@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;properties&apos;&#x0D;&#x0A;- Original project: &apos;14-read-properties&apos;&#x0D;&#x0A;- Destination element: &apos;properties&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     OR.properties&#x0D;&#x0A;     CONFIG.properties" description="Copy files" element1="src/test/resources/properties/OR.properties" element2="src/test/resources/properties/CONFIG.properties" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1559646787764" target="/22-data-driven-framework/src/test/resources/properties" units="0" version="1.0"/>
+</session>

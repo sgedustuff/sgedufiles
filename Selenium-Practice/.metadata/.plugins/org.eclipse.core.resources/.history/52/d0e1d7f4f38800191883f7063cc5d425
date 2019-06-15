@@ -1,0 +1,166 @@
+package base;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.DbManager;
+import utilities.ExcelReader;
+import utilities.MonitoringMail;
+
+
+public class BaseTestClass {
+
+	public static WebDriver driver;
+	public static WebDriverWait wait;
+	public static Properties OR = new Properties();
+	public static Properties Config = new Properties();
+	public static FileInputStream fis;
+	public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\testdata\\testdata.xlsx");
+	public static MonitoringMail mail = new MonitoringMail();
+	public static DbManager db = new DbManager();
+	public static Logger log = Logger.getLogger(BaseTestClass.class);
+	
+	
+	public boolean isElementPresent(String key) {
+		try {
+			if (key.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(key)));
+			} else if (key.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(key)));
+			} else if (key.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(key)));
+			}
+			log.info("Element is found :  " + key);
+			return true;
+		} catch (Throwable t) {
+			log.error("Error while finding an Element : " + key + " error is : " + t.getMessage());
+			return false;
+		}
+	}
+	
+	public void select(String key, String val) {
+		WebElement dropdown  = null;
+		try {
+			if (key.endsWith("_XPATH")) {				
+				dropdown = driver.findElement(By.xpath(OR.getProperty(key)));
+			} else if (key.endsWith("_CSS")) {
+				dropdown = driver.findElement(By.cssSelector(OR.getProperty(key)));
+			} else if (key.endsWith("_ID")) {			
+				dropdown = driver.findElement(By.id(OR.getProperty(key)));
+			}
+		  Select sel = new Select(dropdown);
+		  sel.selectByVisibleText(val);
+		  log.info(val + " is selected from dropdown " + key );	
+		} catch (Throwable t) {
+			log.error("Error while selecting " + val + " : " + key + " error is : " + t.getMessage());			
+		}
+	}
+
+	public Alert isAlertPresent(){
+		Alert al = null;
+		try
+		{
+			al = wait.until(ExpectedConditions.alertIsPresent());
+			log.info("Alert is found");
+		}catch(Exception ex)
+		{
+			log.error("Error while finding an Alert Box:  error is : " + ex.getMessage());
+		}		
+		return al;
+	}
+	
+	
+	public void click(String key) {
+		try {
+			if (key.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(key))).click();
+			} else if (key.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(key))).click();
+			} else if (key.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(key))).click();
+			}
+			log.info("Clicking on an Element : " + key);
+		} catch (Throwable t) {
+			log.error("Error while clicking on an Element : " + key + " error is : " + t.getMessage());
+		}
+	}
+
+	public void type(String key, String value) {
+		try {
+			if (key.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(key))).sendKeys(value);
+			} else if (key.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(key))).sendKeys(value);
+			} else if (key.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(key))).sendKeys(value);
+			}
+			log.info("Typing in an Element :  " + key + " and entered the value as : " + value);
+		} catch (Throwable t) {
+			log.error("Error while typing in an Element: " + key + " error message is : " + t.getMessage());
+		}
+		
+		
+	}
+
+	@BeforeSuite
+	public void setUp() {
+		if (driver == null) {
+			try {
+				PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
+				fis = new FileInputStream(".\\src\\test\\resources\\properties\\CONFIG.properties");
+				Config.load(fis);
+				log.info("Config property file is loaded");
+				fis = new FileInputStream(".\\src\\test\\resources\\properties\\OR.properties");
+				OR.load(fis);
+				log.info("OR property file is loaded");
+				DbManager.setMysqlDbConnection();
+				log.info("MY SQL connection established successfully.");
+				if(Config.getProperty("browser").equals("chrome"))
+				{
+					WebDriverManager.chromedriver().setup();
+					driver = new  ChromeDriver();
+					log.info("Chrome browser launched");
+				}else if(Config.getProperty("browser").equals("firefox"))
+				{
+					WebDriverManager.firefoxdriver().setup();
+					driver = new  FirefoxDriver();
+					log.info("Firefox browser launched");
+				}else if(Config.getProperty("browser").equals("ie"))
+				{
+					WebDriverManager.iedriver().setup();
+					driver = new  InternetExplorerDriver();
+					log.info("IE browser launched");
+				}
+				driver.get(Config.getProperty("test-site-url"));
+				log.info("Navigated to: " + Config.getProperty("test-site-url"));
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(Integer.parseInt(Config.getProperty("implicit-wait")), TimeUnit.SECONDS);
+				wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit-wait")));				
+			} catch (Exception e) {
+			}
+		}
+	}
+
+	@AfterSuite
+	public void tearDown() {
+			driver.quit();
+			log.info("Test case execution completed !!!");
+	}
+}

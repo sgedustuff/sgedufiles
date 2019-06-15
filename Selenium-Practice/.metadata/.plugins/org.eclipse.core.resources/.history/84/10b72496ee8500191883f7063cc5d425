@@ -1,0 +1,12 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+public class TestParameterizationExcel {
+	
+	@Test
+	public void login(String unm, String pass)
+	{
+		
+	}
+}

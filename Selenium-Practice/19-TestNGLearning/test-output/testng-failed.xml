@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="listeners.TestListener"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TestTryCatchScreenShot_11">
+      <class name="TestCases.TestParameterization_FromTestNGXML_13">
         <methods>
-          <include name="TesCaseTryCatchFailedForScreenShot"/>
+          <include name="signup"/>
         </methods>
-      </class> <!-- TestCases.TestTryCatchScreenShot_11 -->
-      <class name="TestCases.TestSkipTestCaseForceFully_10">
-        <methods>
-          <include name="TestFacebookRegistration"/>
-        </methods>
-      </class> <!-- TestCases.TestSkipTestCaseForceFully_10 -->
-      <class name="TestCases.TestDependOn_9">
-        <methods>
-          <include name="TestFacebookRegistration"/>
-        </methods>
-      </class> <!-- TestCases.TestDependOn_9 -->
+      </class> <!-- TestCases.TestParameterization_FromTestNGXML_13 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

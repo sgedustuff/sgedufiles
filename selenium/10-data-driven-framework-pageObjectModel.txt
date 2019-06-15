@@ -1,0 +1,235 @@
+framework
+	- how well, we are managing the project, so that we should not re-write same type of code again and again.
+	- once framework is established in effective manner, then for automating any web-sites, we just need to write the testcases and fillup the locators information in object repo.
+
+
+-----------------------------Data Driven Approach--------------------------
+1) we put resources like 
+	1) properties file
+		1) OR
+		2) Config = app info, mail info, db info etc.
+		3) log4j
+	2) runner
+		1) testng.xml
+	3) testdata
+		1) excel file
+	4) logs
+		1) application log file
+
+**************under /test/resources/ folder*********************
+
+2) we create packages and put assciated java files inside it like
+	1) utilities
+		1) ExcelReader
+		2) DBManager
+		3) MonitoringEmail
+		4) TestUtils
+			1) in this class, we put that common code, which may use while writing test cases like code related to capture screen shot. use this class in testcases classes.
+		
+		**Note** = as report is generated (after maven test) at target\surefire\html, so specify the same location for keeping the screenshots.
+ 
+	2) base
+		1) have class, that contains references like
+
+			1) web driver
+			2) wait
+
+			3) properties (OR & Config)
+			4) logger		
+
+			5) excel reader class
+			6) DBmanager class
+			7) MonitoringEmail class
+			8) listerner class
+			9) capturing screen shot class
+
+			10) keywords like click, type, iselementpresent, select
+			11) testng
+			12) reporting
+
+		2) in addtion to that, the class will have two main methods
+			1) setup = @BeforeSuite
+				1) This method will instantiate all references and will be called before execution of testsuite.
+			2) teardown = @AfterSuite
+				1) This method will deallocate the memory used by all references and will be called after execution of test suite. (driver.quit)
+
+
+	3) listeners
+	4) testcases
+		1) have testcases classes
+
+		in real scenario, to handle big project..we will do like below
+		-- have package "testcases-homepage" = this will hold the test classes, that will further contain test cases of functionality exist on homepage. Let's say on home page, we have two functionality like "sign up" and "login" so will create two testclasses, one test class contains "login" functionality test cases and other test class contains "signup" functionality test cases. The sequence of both test classes will be specified in testng.xml file.
+
+		
+**************under /test/java/ folder*****************************
+3) once these 2 things are done, now the job is only for writing testclasses like "BankManagerLoginTest", "AddCustomerTest" etc under package "testcases". these testclasses will inherit "base" class.
+
+ 
+4) Lets on clicking button, a alert will be appeared, but it may take time to appear, so how to handle.
+
+Alert alert = wait.until(ExpectedConditions..alertIsPresent());
+syso(alert.getText());
+-----------------------------Data Driven Approach--------------------------
+
+
+
+
+-----------------------------Page Object Model--------------------------
+
+- on a page, there is login functionality, so "do login" is the test case and the elements which are part of "login ui" is "business specification"
+- only the way to writing testcase will be changed. Actually it will be divided into parts
+	- test case
+	- business specification
+	** = if in future, if business logic or specification is changed, then only business layer will be updated, the test case layer will be same
+
+1) For each web page, there will be class like HOMEPage, AccountPage etc. There is method of every functionality in every respective Page Class. put these classes under "pages" packages, these are known as business pages.
+
+2) Each type of PAGE class will inherit base PAGE class, that will contain common code. put this class in "base" package
+
+	1) for precautionary purpose, the driver class refernce must be decalared as static and in constructor of "PAGE class" check wheather it is null or not, if null then initialize driver else not required.
+
+	2) if precautionary meausres are not considered, then web driver class will be initiated every time, whenever we will create an object of repective Page class.
+
+
+3) What POM says = whichever method is responsible for taking you on next page, should actually return an object of that page
+	1) by doing this we don;t need to create the object of next page, for calling its respective methods.
+
+	HomePage hp = new HomePage();
+	LandingPage lp = hp.login(<creds>);
+	MyProfilePage mpp = lp.goToProfile();
+	mpp.uploadPhoto();
+
+	//if run only one test case, then we may write like that
+
+
+	new HomePage().login(<cred>).goToprofile().uploadPhoto();
+
+	2) if any method is not reponsible to navigate to next page, then that may be write in below two ways
+
+
+		1)
+		void uploadPhoto()
+		{
+
+		}
+
+		2)
+		MyProfilePage uploadPhoto()
+		{
+		
+		return this.
+		}
+
+4) if u look at the pages little deeply, u will see, that there is common functionality on each and every page like you can perform logout, search, gotoHomePage on HomePage, LandingPage and ProfilePage. So rather than making method of such common functionality in each and every page, will create the seperate class for them like TopNavigation, LeftNavigation, BottomNavigation
+
+	1) it will be written like "Page has a TopNavigation" or "LandingPage has a TopNavigation", rather than "TopNavigation is a page"
+
+	2) "is a" depics inheritance and "has a" depics encapsulation (this means, that super page class, will encapsulate or have an object of "Top Navigation" rather than inherit the TopNavigation class.)
+
+
+	3) how will take the reference of driver in top navigation class.
+
+		1) create ref of driver in top navigation class
+		2) create parameterized cons of top navigation class, that accepts driver as parameter and initialozed it inside 
+		3) where we are creating the object of top navigation class, pass the driver class object, as it is getting created inside the page class.
+
+					*******or******
+
+		1) as driver ref in page class is declared as static, so you can use directly Page.driver.find...
+
+
+
+
+-----------------------------Page Object Model--------------------------
+
+
+
+
+--------------------58 (Appium)------------------------------
+
+-  Android applications are developed in AndroidStudio IDE (Owned by google).
+
+- type in google search = android version history = land on wiki page = scrool down= u will see like Jelly Bean, Eclair along with corresponding versions and API levels
+	- API level refers to that which ANDROID SDK version is required for testing mobile applications
+
+- google has developed frameworks for Android developes to test the android applications
+	- Instruments (Very Old) = It supports till 4.3 version (Till Jelly Bean)
+	- UIAutomator = It supports from 4.4 till 7.12 version (from kitkat to Nougat)
+	- UIAutomator2 (Latest)
+
+
+
+-  IOS applications are developed in XCODE (owned by apple).
+-  apple has developed frameworks for IOS developes to test the IOS applications
+	- UIAUtomation = support till 9.3
+	- XCUITest (Latest) = above 9.3 like From IPhone8 onwards like IPhoneX, IPhoneMax etc.
+
+
+
+
+- There are three types of applications on mobile plateform
+	- Native App
+		- Standalone applictions like dialler, calculator (Internal Applications of Android)
+	- Web App
+		- which is launched by browser
+		- for android, the default browser is chrome. for ios the default browser is safari
+	- Hybrid App
+		- Mixture of above
+
+- Appium is the plateform that test above three types of applications (like selenium test applications that runs on various browser like safari, firefox, chrome, IE etc ) + it supports multiple OS as well like it works on IOS, Android and WindowsPhone as well (like selenium support WINDOW OS, MAC OS, LINUX etc).
+
+- Website = appium.io = basically appium uses webdriver protocol, to test three types of applications which run on mobile plateform = additionally it is the open source automation testing framework.
+
+	- if scroll down, u will see "requirements".
+		- for testing IOS application, we need MAC OS + XCODE with command line tools
+		- for testing andoid applications, we can use MAC OS/Win/LINUX but Android SDK must be 16 ver onwards
+
+
+
+- It is built up on NODE JS, hosted on server, the who is client, who actually send the request
+	- client name = Eclipse that uses java-client.jar for sending request to server for testing mobile apps, just like eclipse uses selenium.jar file for sending request to browser to test web apps
+
+	- java-client.jar = it is the combination of appium classes and WebDriver classes.
+		- so if we have this jar, then no need to have selenium jar file, this single jar is sufficient.
+
+	- Just like to test web application on firefox driver, in selenium we use "FireFoxDriver" class so similarly for  testing mobile applciation, we use "AndroidDriver/IOSDRIVER" class.
+
+
+- AndroidDriver/IOSDriver
+	- This class actually sends request to Appium server, where Appium specific service is installed and configured. This service is written in NODE JS. The request is sent to server in the form REST API. from server, the request is forwarded to UIAutomator2 and UIAutomator2 will execute the test on real DB
+	- This driver tell, that i want to perform testing where the
+		- plateform is android
+		- plateform version is 9.0
+		- device name is samsung
+
+- So eventually Appium is service, which is actually receving the request and sending the request
+	
+
+- Pre-requisite of installing Appium
+	- JDK 1.8
+	- AndroidStudio = This requires JDK 1.8
+	- Appium Server = GUI
+	- java-client.jar file
+	- Real Device Configuration
+	
+	
+- it is based on three things
+	1) client
+	2) Server
+	3) Platform = seperate platform for mobile devices. in which we have Android Devices (own by GOOGLE) and IOS Devices (own by APPLE)
+
+
+1.14
+
+
+--------------------58 (Appium)------------------------------
+
+3) There is code in "PAGE" class, that prevents serveral things like
+	1) push notification related to allow cookies or enable/disable security
+	2) there is bar, that shows message, that chrome is being controlled by automation testing software
+
+
+ 
+
+		

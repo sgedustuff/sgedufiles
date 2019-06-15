@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class ProfilePage {
+	WebDriver driver;
+	public ProfilePage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	public void goToFriends()
+	{
+		
+	}
+	
+	public void goToAbout()
+	{
+		
+	}
+	
+	public void uploadPhoto()
+	{
+		driver.findElement(By.xpath("//*[@id=\"u_fetchstream_3_e\"]")).click();
+	}
+	
+}
